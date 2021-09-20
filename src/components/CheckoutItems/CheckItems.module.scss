@@ -1,0 +1,48 @@
+@import '../../styles/breakpoints.scss';
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 0.75rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: var(--br-lg);
+}
+
+.middleBox {
+  grid-column: span 3 / span 3;
+  margin: 0 1.25rem;
+}
+
+.prime {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--clr-yellow-light);
+  color: black;
+  padding: 0.5rem;
+  border-radius: var(--br-md);
+  font-size: var(--fs-xs);
+}
+
+.delete {
+  p {
+    font-size: var(--fs-xs);
+    background-color: var(--clr-bleu);
+    color: black;
+    padding: 0.5rem;
+    border-radius: var(--br-md);
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 0.5rem;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.price {
+  font-weight: 600;
+}

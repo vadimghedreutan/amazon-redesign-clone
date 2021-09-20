@@ -1,0 +1,41 @@
+.signin {
+  padding: 4rem;
+  width: 100%;
+}
+
+.logo {
+  height: 2.5rem;
+  margin-top: 1.75rem;
+}
+
+.container {
+  padding: 1.75rem;
+  margin: 0.5rem 0 2.5rem 0;
+  width: 360px;
+  margin: 0 auto;
+  h1 {
+    font-size: var(--fs-2xl);
+    font-weight: bold;
+  }
+  p {
+    font-size: var(--fs-xs);
+    margin-top: 1.5rem;
+  }
+}
+
+.btn {
+  font-size: var(--fs-md);
+  cursor: pointer;
+  background-color: var(--clr-yellow);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: normal;
+  transition: 0.2s all;
+  border: none;
+  border-radius: var(--br-lg);
+  margin-top: 0.3rem;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

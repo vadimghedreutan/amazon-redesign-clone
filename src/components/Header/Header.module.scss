@@ -1,0 +1,85 @@
+@import '../../styles/breakpoints.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  p {
+    font-size: var(--fs-sm);
+    cursor: pointer;
+  }
+}
+
+.logo {
+  width: 150px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.list {
+  gap: 0.5rem;
+  display: none;
+
+  @include respond(md) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1rem;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+
+  p {
+    font-weight: bold;
+  }
+
+  svg {
+    height: 1.75rem;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.user,
+.basket {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  gap: 0.3rem;
+}
+
+.signout {
+  svg {
+    height: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.basket {
+  position: relative;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--clr-yellow);
+    text-align: center;
+    border-radius: var(--br-full);
+    color: black;
+    font-weight: bold;
+    font-size: var(--fs-xs);
+  }
+}

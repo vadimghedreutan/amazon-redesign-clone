@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
+    "@heroicons/react": "^1.0.4",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@stripe/stripe-js": "^1.17.1",
+    "axios": "^0.21.4",
+    "firebase": "^9.0.2",
+    "firebase-admin": "^9.11.1",
+    "micro": "^9.3.4",
+    "moment": "^2.29.1",
+    "next": "11.1.2",
+    "next-auth": "^3.29.0",
+    "react": "17.0.2",
+    "react-currency-formatter": "^1.1.0",
+    "react-dom": "17.0.2",
+    "react-multiline-clamp": "^2.0.0",
+    "react-redux": "^7.2.5",
+    "react-responsive-carousel": "^3.2.21",
+    "react-simple-star-rating": "^3.0.0",
+    "sass": "^1.41.1",
+    "stripe": "^8.176.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}

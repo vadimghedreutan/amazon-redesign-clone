@@ -1,0 +1,59 @@
+@import 'breakpoints.scss';
+
+.well {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: var(--br-lg);
+
+  @include respond(md) {
+    padding: 1.25rem;
+  }
+
+  svg {
+    height: 1.75rem;
+    color: green;
+    margin-right: 0.5rem;
+  }
+
+  h1 {
+    font-size: var(--fs-xl);
+    font-weight: 600;
+
+    @include respond(md) {
+      font-size: var(--fs-2xl);
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  font-size: var(--fs-sm);
+  cursor: pointer;
+  background-color: var(--clr-yellow);
+  color: white;
+  font-weight: normal;
+  transition: 0.2s all;
+  padding: 0.5rem;
+  border-radius: var(--br-md);
+  border: none;
+  margin-top: 1rem;
+
+  @include respond(md) {
+    width: fit-content;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

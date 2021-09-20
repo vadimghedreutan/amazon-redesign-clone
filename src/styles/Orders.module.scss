@@ -1,0 +1,14 @@
+.title {
+  h1 {
+    font-size: var(--fs-2xl);
+  }
+
+  h2 {
+    font-size: var(--fs-sm);
+    background-color: var(--clr-bleu);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: var(--br-md);
+    margin-top: 0.2rem;
+  }
+}

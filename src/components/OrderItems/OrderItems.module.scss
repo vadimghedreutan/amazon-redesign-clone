@@ -1,0 +1,58 @@
+@import '../../styles/breakpoints.scss';
+
+.container {
+  position: relative;
+  border: 1px solid var(--clr-bleu);
+  border-radius: var(--br-md);
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--clr-bleu);
+  color: #575959;
+}
+
+.body {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.items {
+  flex: 1 1 0%;
+  white-space: nowrap;
+  align-self: flex-end;
+  text-align: right;
+  font-size: var(--fs-sm);
+  color: black;
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: var(--fs-xs);
+}
+
+.order {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+  width: 10rem;
+}
+
+.image {
+  height: 5rem;
+  object-fit: contain;
+}
