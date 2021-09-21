@@ -10,12 +10,19 @@
     font-size: var(--fs-sm);
     cursor: pointer;
   }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
 }
 
 .logo {
   width: 150px;
   margin-right: 1rem;
   cursor: pointer;
+  @media (max-width: 320px) {
+    width: 100px;
+  }
 }
 
 .list {
@@ -34,16 +41,25 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem;
+  @include respond(lg) {
+    padding: 0.5rem;
+  }
 
   p {
     font-weight: bold;
+    font-size: var(--fs-xs);
+    @include respond(lg) {
+      font-size: inherit;
+    }
   }
 
   svg {
-    height: 1.75rem;
+    height: 1.5rem;
     color: black;
     cursor: pointer;
+    @include respond(md) {
+      height: 1.75rem;
+    }
   }
 }
 
@@ -55,6 +71,22 @@
 
 .user {
   gap: 0.3rem;
+
+  a {
+    display: none;
+    cursor: pointer;
+    @include respond(md) {
+      display: inline;
+    }
+  }
+
+  p {
+    font-size: var(--fs-xs);
+    line-height: 1;
+    @include respond(lg) {
+      font-size: inherit;
+    }
+  }
 }
 
 .signout {

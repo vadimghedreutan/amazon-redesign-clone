@@ -34,17 +34,18 @@ function Header() {
 
             {session ? (
               <div className={styles.user}>
-                <UserCircleIcon />
                 <p>Hi, {session.user.name}</p>
                 <div className={styles.signout} onClick={() => signOut()}>
                   <LogoutIcon />
                 </div>
               </div>
             ) : (
-              <div className={styles.user}>
-                <UserCircleIcon />
-                <Link href="/signin">Sign In</Link>
-              </div>
+              <Link href="/signin">
+                <div className={styles.user}>
+                  <UserCircleIcon />
+                  <a>Sign In</a>
+                </div>
+              </Link>
             )}
           </div>
         </div>
